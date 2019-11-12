@@ -1,0 +1,67 @@
+2019-08-23 11:29:56.978 [main] INFO  [com.aiuiot.house.HousesApplication:48] - Starting HousesApplication on aiuiot.local with PID 2232 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses/house-web)
+2019-08-23 11:29:56.986 [main] INFO  [com.aiuiot.house.HousesApplication:593] - No active profile set, falling back to default profiles: default
+2019-08-23 11:29:57.419 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b5a5ed1: startup date [Fri Aug 23 11:29:57 CST 2019]; root of context hierarchy
+2019-08-23 11:29:58.138 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.6.Final
+2019-08-23 11:30:05.170 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @15987ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-08-23 11:30:05.822 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory:177] - Server initialized with port: 8081
+2019-08-23 11:30:05.828 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_221-b11
+2019-08-23 11:30:06.318 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring embedded WebApplicationContext
+2019-08-23 11:30:06.319 [main] INFO  [org.springframework.web.context.ContextLoader:287] - Root WebApplicationContext: initialization completed in 8900 ms
+2019-08-23 11:30:07.291 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-08-23 11:30:07.297 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-08-23 11:30:07.298 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-08-23 11:30:07.299 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-08-23 11:30:07.300 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:272] - Mapping filter: 'logFilter' to urls: [*]
+2019-08-23 11:30:07.300 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-08-23 11:30:07.302 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-08-23 11:30:07.641 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2019-08-23 11:30:07.642 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2019-08-23 11:30:07.643 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 600000ms
+2019-08-23 11:30:07.670 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:855] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@607b2792{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.3175949520086684986.8081/],AVAILABLE}
+2019-08-23 11:30:07.671 [main] INFO  [org.eclipse.jetty.server.Server:407] - Started @18489ms
+2019-08-23 11:30:09.637 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:847] - {dataSource-1} inited
+2019-08-23 11:30:13.189 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerAdapter:557] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b5a5ed1: startup date [Fri Aug 23 11:29:57 CST 2019]; root of context hierarchy
+2019-08-23 11:30:13.384 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/agency/agentList]}" onto public java.lang.String com.aiuiot.house.web.controller.AgencyController.agentList(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.386 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/agency/agentDetail]}" onto public java.lang.String com.aiuiot.house.web.controller.AgencyController.agentDetail(java.lang.Long,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.388 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/hello]}" onto public java.lang.String com.aiuiot.house.web.controller.HelloController.hello(org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.389 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[]}" onto public java.lang.String com.aiuiot.house.web.controller.HomepageController.index(org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.390 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/index]}" onto public java.lang.String com.aiuiot.house.web.controller.HomepageController.accountsRegister(org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.392 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/toAdd]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.toAdd(org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.392 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/add]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.doAdd()
+2019-08-23 11:30:13.393 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/ownlist]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.owmlist()
+2019-08-23 11:30:13.394 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/list]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.houseList(java.lang.Integer,java.lang.Integer,com.aiuiot.house.common.model.House,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.395 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/detail]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.houseDetail(java.lang.Long,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.396 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/house/leaveMsg]}" onto public java.lang.String com.aiuiot.house.web.controller.HouseController.houseMsg(com.aiuiot.house.common.model.UserMsg)
+2019-08-23 11:30:13.401 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/profile]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.profile(javax.servlet.http.HttpServletRequest,com.aiuiot.house.common.model.User,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.402 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/verify]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.verify(java.lang.String)
+2019-08-23 11:30:13.404 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/signin]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.singin(javax.servlet.http.HttpServletRequest)
+2019-08-23 11:30:13.405 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/logout]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.logout(javax.servlet.http.HttpServletRequest)
+2019-08-23 11:30:13.407 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/changePassword]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.changePassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.408 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/accounts/register]}" onto public java.lang.String com.aiuiot.house.web.controller.UserController.accountsRegister(com.aiuiot.house.common.model.User,org.springframework.ui.ModelMap)
+2019-08-23 11:30:13.414 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-23 11:30:13.415 [main] INFO  [o.s.w.s.m.m.a.RequestMappingHandlerMapping:544] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-08-23 11:30:13.514 [main] INFO  [o.s.web.servlet.handler.SimpleUrlHandlerMapping:364] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-23 11:30:13.532 [main] INFO  [o.s.web.servlet.handler.SimpleUrlHandlerMapping:364] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-23 11:30:13.612 [main] INFO  [o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:274] - Detected @ExceptionHandler methods in errorHandler
+2019-08-23 11:30:13.748 [main] INFO  [o.s.web.servlet.handler.SimpleUrlHandlerMapping:364] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-08-23 11:30:14.378 [main] INFO  [o.s.w.servlet.view.freemarker.FreeMarkerConfigurer:127] - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-08-23 11:30:14.884 [main] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:431] - Registering beans for JMX exposure on startup
+2019-08-23 11:30:14.886 [main] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:918] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-08-23 11:30:14.887 [main] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:918] - Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-08-23 11:30:14.898 [main] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:672] - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-08-23 11:30:14.900 [main] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:672] - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-08-23 11:30:14.971 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-08-23 11:30:14.972 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:489] - FrameworkServlet 'dispatcherServlet': initialization started
+2019-08-23 11:30:15.003 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:508] - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2019-08-23 11:30:15.182 [main] INFO  [org.eclipse.jetty.server.AbstractConnector:292] - Started ServerConnector@7f9e1534{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2019-08-23 11:30:15.194 [main] INFO  [o.s.b.c.e.jetty.JettyEmbeddedServletContainer:157] - Jetty started on port(s) 8081 (http/1.1)
+2019-08-23 11:30:15.206 [main] INFO  [com.aiuiot.house.HousesApplication:57] - Started HousesApplication in 20.081 seconds (JVM running for 26.023)
+2019-08-23 11:30:57.895 [RMI TCP Connection(11)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125] - Application shutdown requested.
+2019-08-23 11:30:57.903 [RMI TCP Connection(11)-127.0.0.1] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:985] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b5a5ed1: startup date [Fri Aug 23 11:29:57 CST 2019]; root of context hierarchy
+2019-08-23 11:30:57.921 [RMI TCP Connection(11)-127.0.0.1] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:449] - Unregistering JMX-exposed beans on shutdown
+2019-08-23 11:30:57.922 [RMI TCP Connection(11)-127.0.0.1] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:243] - Unregistering JMX-exposed beans
+2019-08-23 11:30:57.932 [RMI TCP Connection(11)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-08-23 11:30:57.960 [RMI TCP Connection(11)-127.0.0.1] INFO  [org.eclipse.jetty.server.AbstractConnector:341] - Stopped ServerConnector@7f9e1534{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+2019-08-23 11:30:57.962 [RMI TCP Connection(11)-127.0.0.1] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-08-23 11:30:57.980 [RMI TCP Connection(11)-127.0.0.1] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-08-23 11:30:57.983 [RMI TCP Connection(11)-127.0.0.1] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@607b2792{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.3175949520086684986.8081/],UNAVAILABLE}

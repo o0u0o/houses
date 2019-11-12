@@ -1,0 +1,112 @@
+2019-07-01 15:30:25.681 [main] INFO  [com.aiuiot.house.HousesApplication:48] - Starting HousesApplication on aiuiot.local with PID 719 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses/house-web)
+2019-07-01 15:30:25.690 [main] INFO  [com.aiuiot.house.HousesApplication:593] - No active profile set, falling back to default profiles: default
+2019-07-01 15:30:25.885 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7b159b: startup date [Mon Jul 01 15:30:25 CST 2019]; root of context hierarchy
+2019-07-01 15:30:26.129 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.6.Final
+2019-07-01 15:30:28.997 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @6743ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-01 15:30:29.366 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory:177] - Server initialized with port: 8888
+2019-07-01 15:30:29.370 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.2+9-LTS
+2019-07-01 15:30:29.497 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring embedded WebApplicationContext
+2019-07-01 15:30:29.497 [main] INFO  [org.springframework.web.context.ContextLoader:287] - Root WebApplicationContext: initialization completed in 3612 ms
+2019-07-01 15:30:29.703 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-01 15:30:29.706 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-01 15:30:29.707 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-01 15:30:29.707 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-01 15:30:29.708 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:272] - Mapping filter: 'logFilter' to urls: [*]
+2019-07-01 15:30:29.709 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-01 15:30:29.710 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-01 15:30:30.026 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2019-07-01 15:30:30.027 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2019-07-01 15:30:30.029 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 660000ms
+2019-07-01 15:30:30.053 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:855] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6232ffdb{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.9301522041613803027.8888/],AVAILABLE}
+2019-07-01 15:30:30.055 [main] INFO  [org.eclipse.jetty.server.Server:407] - Started @7800ms
+2019-07-01 15:30:31.074 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:847] - {dataSource-1} inited
+2019-07-01 15:30:31.227 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-07-01 15:30:31.233 [main] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-07-01 15:30:31.238 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@6232ffdb{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.9301522041613803027.8888/],UNAVAILABLE}
+2019-07-01 15:30:31.250 [main] INFO  [o.s.b.a.l.AutoConfigurationReportLoggingInitializer:102] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-01 15:33:51.396 [main] INFO  [com.aiuiot.house.HousesApplication:48] - Starting HousesApplication on aiuiot.local with PID 806 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses/house-web)
+2019-07-01 15:33:51.401 [main] INFO  [com.aiuiot.house.HousesApplication:593] - No active profile set, falling back to default profiles: default
+2019-07-01 15:33:51.529 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7b159b: startup date [Mon Jul 01 15:33:51 CST 2019]; root of context hierarchy
+2019-07-01 15:33:51.838 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.6.Final
+2019-07-01 15:33:53.993 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @5414ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-01 15:33:54.288 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory:177] - Server initialized with port: 8888
+2019-07-01 15:33:54.290 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.2+9-LTS
+2019-07-01 15:33:54.374 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring embedded WebApplicationContext
+2019-07-01 15:33:54.375 [main] INFO  [org.springframework.web.context.ContextLoader:287] - Root WebApplicationContext: initialization completed in 2847 ms
+2019-07-01 15:33:54.612 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-01 15:33:54.615 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-01 15:33:54.616 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-01 15:33:54.617 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-01 15:33:54.618 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:272] - Mapping filter: 'logFilter' to urls: [*]
+2019-07-01 15:33:54.618 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-01 15:33:54.620 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-01 15:33:54.863 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2019-07-01 15:33:54.864 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2019-07-01 15:33:54.866 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 660000ms
+2019-07-01 15:33:54.888 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:855] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6232ffdb{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.15924195067028198613.8888/],AVAILABLE}
+2019-07-01 15:33:54.888 [main] INFO  [org.eclipse.jetty.server.Server:407] - Started @6310ms
+2019-07-01 15:33:55.855 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:847] - {dataSource-1} inited
+2019-07-01 15:33:56.034 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-07-01 15:33:56.043 [main] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-07-01 15:33:56.051 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@6232ffdb{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.15924195067028198613.8888/],UNAVAILABLE}
+2019-07-01 15:33:56.082 [main] INFO  [o.s.b.a.l.AutoConfigurationReportLoggingInitializer:102] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-01 15:41:53.031 [main] INFO  [com.aiuiot.house.HousesApplication:48] - Starting HousesApplication on aiuiot.local with PID 1066 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses/house-web)
+2019-07-01 15:41:53.035 [main] INFO  [com.aiuiot.house.HousesApplication:593] - No active profile set, falling back to default profiles: default
+2019-07-01 15:41:53.161 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7b159b: startup date [Mon Jul 01 15:41:53 CST 2019]; root of context hierarchy
+2019-07-01 15:41:53.511 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.6.Final
+2019-07-01 15:41:55.459 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @4825ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-01 15:41:55.759 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory:177] - Server initialized with port: 8888
+2019-07-01 15:41:55.762 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.2+9-LTS
+2019-07-01 15:41:55.848 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring embedded WebApplicationContext
+2019-07-01 15:41:55.849 [main] INFO  [org.springframework.web.context.ContextLoader:287] - Root WebApplicationContext: initialization completed in 2688 ms
+2019-07-01 15:41:56.071 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-01 15:41:56.074 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-01 15:41:56.074 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-01 15:41:56.075 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-01 15:41:56.076 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:272] - Mapping filter: 'logFilter' to urls: [*]
+2019-07-01 15:41:56.076 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-01 15:41:56.078 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-01 15:41:56.354 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2019-07-01 15:41:56.355 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2019-07-01 15:41:56.357 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 600000ms
+2019-07-01 15:41:56.381 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:855] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@15efda6c{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.16548418087706851968.8888/],AVAILABLE}
+2019-07-01 15:41:56.382 [main] INFO  [org.eclipse.jetty.server.Server:407] - Started @5748ms
+2019-07-01 15:41:57.334 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:847] - {dataSource-1} inited
+2019-07-01 15:41:57.487 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-07-01 15:41:57.498 [main] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-07-01 15:41:57.502 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@15efda6c{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.16548418087706851968.8888/],UNAVAILABLE}
+2019-07-01 15:41:57.515 [main] INFO  [o.s.b.a.l.AutoConfigurationReportLoggingInitializer:102] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-01 15:43:08.778 [main] INFO  [com.aiuiot.house.HousesApplication:48] - Starting HousesApplication on aiuiot.local with PID 1088 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses/house-web)
+2019-07-01 15:43:08.785 [main] INFO  [com.aiuiot.house.HousesApplication:593] - No active profile set, falling back to default profiles: default
+2019-07-01 15:43:08.930 [main] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7b159b: startup date [Mon Jul 01 15:43:08 CST 2019]; root of context hierarchy
+2019-07-01 15:43:09.230 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:30] - HV000001: Hibernate Validator 5.3.6.Final
+2019-07-01 15:43:11.252 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @4587ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-07-01 15:43:11.556 [main] INFO  [o.s.b.c.e.j.JettyEmbeddedServletContainerFactory:177] - Server initialized with port: 8888
+2019-07-01 15:43:11.559 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 11.0.2+9-LTS
+2019-07-01 15:43:11.648 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Initializing Spring embedded WebApplicationContext
+2019-07-01 15:43:11.648 [main] INFO  [org.springframework.web.context.ContextLoader:287] - Root WebApplicationContext: initialization completed in 2718 ms
+2019-07-01 15:43:11.838 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-01 15:43:11.841 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-01 15:43:11.842 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-01 15:43:11.843 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:259] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-01 15:43:11.843 [main] INFO  [o.s.boot.web.servlet.FilterRegistrationBean:272] - Mapping filter: 'logFilter' to urls: [*]
+2019-07-01 15:43:11.844 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-01 15:43:11.846 [main] INFO  [o.s.boot.web.servlet.ServletRegistrationBean:191] - Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-01 15:43:12.123 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2019-07-01 15:43:12.124 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2019-07-01 15:43:12.126 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 660000ms
+2019-07-01 15:43:12.150 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:855] - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@33f2df51{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.8491068658944407616.8888/],AVAILABLE}
+2019-07-01 15:43:12.152 [main] INFO  [org.eclipse.jetty.server.Server:407] - Started @5486ms
+2019-07-01 15:43:12.917 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:847] - {dataSource-1} inited
+2019-07-01 15:43:13.069 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-07-01 15:43:13.079 [main] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-07-01 15:43:13.104 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@33f2df51{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.8491068658944407616.8888/],UNAVAILABLE}
+2019-07-01 15:43:13.116 [main] INFO  [o.s.b.a.l.AutoConfigurationReportLoggingInitializer:102] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.

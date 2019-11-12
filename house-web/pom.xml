@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.aiuiot.house</groupId>
+    <artifactId>houses-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.aiuiot.house</groupId>
+  <artifactId>house-web</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>house-web</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <scope>test</scope>
+	    </dependency>
+    
+	    <!-- 添加依赖，是的house-web 依赖house-biz -->
+	    <dependency>
+	    	<groupId>com.aiuiot.house</groupId>
+	    	<artifactId>house-biz</artifactId>
+	    	<version>1.0.0-SNAPSHOT</version>
+	    </dependency>
+    	
+		<!-- 引入 freemarker 的起步依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+		
+		<!-- 引入commons-lang3 依赖 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
+		<!-- SpringBoot单元测试 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+  </dependencies>
+  
+  	<!-- 打包插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- 配置主函数 -->
+				<configuration>
+					<!-- 启动类 -->
+					<mainClass>com.aiuiot.house.HousesApplication</mainClass>
+					<!-- 打包成一个可执行的jar 一般设置为zip-->
+					<layout>ZIP</layout>
+				</configuration>
+				<!-- 以何种方式来执行 -->
+				<executions>
+					<execution>
+						<goals>
+							<!-- 创建一个可执行的jar包 -->
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>

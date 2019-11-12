@@ -1,0 +1,9 @@
+2019-06-07 00:00:20.263 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:125] - Application shutdown requested.
+2019-06-07 00:00:20.279 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:985] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7b159b: startup date [Thu Jun 06 23:45:33 CST 2019]; root of context hierarchy
+2019-06-07 00:00:20.290 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:449] - Unregistering JMX-exposed beans on shutdown
+2019-06-07 00:00:20.291 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:243] - Unregistering JMX-exposed beans
+2019-06-07 00:00:20.315 [RMI TCP Connection(2)-127.0.0.1] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2019-06-07 00:00:20.332 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.eclipse.jetty.server.AbstractConnector:341] - Stopped ServerConnector@1d247525{HTTP/1.1,[http/1.1]}{0.0.0.0:8090}
+2019-06-07 00:00:20.333 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2019-06-07 00:00:20.337 [RMI TCP Connection(2)-127.0.0.1] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2019-06-07 00:00:20.341 [RMI TCP Connection(2)-127.0.0.1] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@123d7057{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.18433523386415595774.8090/],UNAVAILABLE}
