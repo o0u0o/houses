@@ -20,4 +20,10 @@ public class CommonConstants {
 	//热门房产的数量
 	public static final Integer RECOM_SIZE = 3;
 
+	//房产为上架状态
+	public static final Integer HOUSE_STATE_UP = 1;
+
+	//房产为下架状态
+	public static final Integer HOUSE_STATE_DOWN = 2;
+
 }

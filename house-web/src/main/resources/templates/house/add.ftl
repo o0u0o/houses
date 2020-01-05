@@ -14,7 +14,7 @@
         <!-- Breadcrumb -->
         <div class="container">
             <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="#">首页</a></li>
                 <li class="active">添加你的房产</li>
             </ol>
         </div>
@@ -28,7 +28,7 @@
                         <div class="col-md-9 col-sm-9">
                             <section id="submit-form">
                                 <section id="basic-information">
-                                    <header><h2>Basic Information</h2></header>
+                                    <header><h2>基础信息</h2></header>
                                     <div class="row">
                                         <div class="col-md-8">
                                             <div class="form-group">

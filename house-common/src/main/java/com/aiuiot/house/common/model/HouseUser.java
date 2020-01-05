@@ -1,5 +1,7 @@
 package com.aiuiot.house.common.model;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -11,51 +13,29 @@ import java.util.Date;
  * @date: 2019年7月19日 下午6:20:19
  * @version V1.0
  */
+@Data
 public class HouseUser {
+
 	private Long id;
+
+	/**
+	 * 房产ID
+	 */
 	private Long houseId;
+
+	/**
+	 * 用户ID
+	 */
 	private Long userId;
+
+	/**
+	 * 创见时间
+	 */
 	private Date createTime;
+
+	/**
+	 * 类型 代表收藏还是售卖
+	 */
 	private Integer type;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public Long getHouseId() {
-		return houseId;
-	}
-
-	public void setHouseId(Long houseId) {
-		this.houseId = houseId;
-	}
-
-	public Long getUserId() {
-		return userId;
-	}
-
-	public void setUserId(Long userId) {
-		this.userId = userId;
-	}
-
-	public Date getCreateTime() {
-		return createTime;
-	}
-
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
-
-	public Integer getType() {
-		return type;
-	}
-
-	public void setType(Integer type) {
-		this.type = type;
-	}
 
 }

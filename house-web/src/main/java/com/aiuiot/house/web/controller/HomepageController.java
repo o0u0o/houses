@@ -27,16 +27,16 @@ public class HomepageController {
 	  private RecommendService recommendService;
 	  
 	  @Autowired
-	  private UserService userService;
+	  private UserService userService;	//推荐
 
 	/**
-	 * 账号注册
+	 * 首页
 	 * @param modelMap
 	 * @return
 	 */
 	@RequestMapping("index")
 	  public String accountsRegister(ModelMap modelMap){
-	  	//查询新上房源
+	  	//查询新上房源（推荐功能）
 	    List<House> houses =  recommendService.getLastest();
 	    modelMap.put("recomHouses", houses);
 	    return "/homepage/index";

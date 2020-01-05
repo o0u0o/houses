@@ -2,15 +2,13 @@ package com.aiuiot.house.web.controller;
 
 import com.aiuiot.house.biz.service.*;
 import com.aiuiot.house.common.constants.CommonConstants;
-import com.aiuiot.house.common.model.Comment;
+import com.aiuiot.house.common.model.*;
+import com.aiuiot.house.web.interceptor.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.aiuiot.house.common.model.House;
-import com.aiuiot.house.common.model.HouseUser;
-import com.aiuiot.house.common.model.UserMsg;
 import com.aiuiot.house.common.page.PageData;
 import com.aiuiot.house.common.page.PageParams;
 
@@ -28,7 +26,6 @@ import java.util.List;
 @Controller
 public class HouseController {
 	
-	//将 HouseService 注入进来
 	@Autowired
 	private HouseService houseService;
 	
@@ -39,6 +36,7 @@ public class HouseController {
 	@Autowired
 	private AgencyService agencyService;
 
+	//小区
 	@Autowired
 	private CommentService commentService;
 
@@ -68,23 +66,45 @@ public class HouseController {
 		modelMap.put("vo", query);
 		return "/house/listing";
 	}
-	
+
+	/**
+	 * 添加房产信息
+	 * @param modelMap
+	 * @return
+	 */
 	@RequestMapping("/house/toAdd")
 	public String toAdd(ModelMap modelMap) {
-		modelMap.put("city", cityService.getAllCitys());
+		modelMap.put("citys", cityService.getAllCitys());
 		modelMap.put("communitys", houseService.getAllCommunitys());
 		return "/house/add";
 	}
-	
+
+	/**
+	 *
+	 * step1、获取用户
+	 * step2、设置房产状态
+	 * step3、添加到数据库
+	 * @return
+	 */
 	@RequestMapping("/house/add")
-	public String doAdd() {
-		//待完成
+	public String doAdd(House house) {
+		User user = UserContext.getUser();
+		house.setState(CommonConstants.HOUSE_STATE_UP);
+		houseService.addHouse(house, user);
 		return "redirect:/house/ownlist";
 	}
-	
+
+	/**
+	 * 个人列表
+	 * @return
+	 */
 	@RequestMapping("/house/ownlist")
-	public String owmlist() {
-		
+	public String owmlist(House house, Integer pageNum, Integer pageSize, ModelMap modelMap) {
+		User user = UserContext.getUser();
+		house.setUserId(user.getId());
+		house.setBookmarked(false);
+		modelMap.put("ps", houseService.queryHouse(house, PageParams.build(pageSize, pageNum)));
+		modelMap.put("pageType", "own");
 		return "/house/ownlist";
 	}
 	

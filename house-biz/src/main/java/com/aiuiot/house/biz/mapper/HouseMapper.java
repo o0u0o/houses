@@ -1,5 +1,6 @@
 package com.aiuiot.house.biz.mapper;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -27,9 +28,6 @@ public interface HouseMapper {
 
 	//返回总数
 	public Long selectPageCount(@Param("house")House query);
-	
-	//插入用户
-	public int insert(House account);
 
 	public List<Community> selectCommunity(Community community);
 	
@@ -37,10 +35,16 @@ public interface HouseMapper {
 	
 	public HouseUser selectSaleHouseUser(@Param("id") Long houseId);
 	
-	public int insertHouseUser(HouseUser houseUser);
+
 
 	public void insertUserMsg(UserMsg userMsg);
 
-	
+	// 添加房产
+	public int insert(House house);
+
+	public HouseUser selectHouseUser(@Param("userId") Long userId, @Param("id") Long houseId, @Param("type") Integer type);
+
+	//插入房产
+	public int insertHouseUser(HouseUser houseUser);
 
 }

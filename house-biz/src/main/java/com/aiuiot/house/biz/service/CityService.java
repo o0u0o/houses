@@ -9,7 +9,7 @@ import com.google.common.collect.Lists;
  * 
  * @Title:  CityService.java   
  * @Package com.aiuiot.house.biz.service   
- * @Description:    CityService   
+ * @Description:    CityService  城市服务
  * @author: ZerOneth 
  * @date:   2019年6月23日 上午10:26:01   
  * @version V1.0
@@ -20,7 +20,7 @@ public class CityService {
 	public Object getAllCitys() {
 		City city = new City();
 		city.setCityCode("110000");
-		city.setCityName("北京");
+		city.setCityName("北京市");
 		city.setId(1);
 		return Lists.newArrayList(city);
 	}

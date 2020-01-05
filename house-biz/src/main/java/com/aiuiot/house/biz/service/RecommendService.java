@@ -29,7 +29,9 @@ public class RecommendService {
     @Autowired
     private HouseService houseService;
 
+
     /**
+     * 获取最新房源
      * 获取最后添加的房源
      * @return
      */
