@@ -22,7 +22,9 @@
 		<typeAlias type="com.aiuiot.house.common.model.Community" alias="community"/>
 		<typeAlias type="com.aiuiot.house.common.model.HouseUser" alias="houseUser"/>
 	</typeAliases>
-	
+
+
+	<!-- 映射 -->
 	<mappers>
 		<mapper resource="mapper/user.xml"/>
 		<mapper resource="mapper/house.xml"/>

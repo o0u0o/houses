@@ -3,7 +3,8 @@ package com.aiuiot.house.web.interceptor;
 import com.aiuiot.house.common.model.User;
 
 /**
- * 用于进行包装
+ * 用于进行包装 处理操作ThreadLocal
+ *
  * @author aiuiot
  *
  */

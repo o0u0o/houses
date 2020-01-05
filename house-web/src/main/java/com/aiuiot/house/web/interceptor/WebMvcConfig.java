@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  *  配置类，配置多个拦截器的执行顺序
- *  需要集成 WebMvcConfigurerAdapter
+ *  需要继承 WebMvcConfigurerAdapter
  * @author aiuiot
  *
  */

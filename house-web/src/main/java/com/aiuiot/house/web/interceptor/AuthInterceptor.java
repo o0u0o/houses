@@ -16,7 +16,7 @@ import com.google.common.base.Joiner;
 
 /**
  * 登录鉴权 拦截器
- * 实现
+ * 实现HandlerInterceptor
  * @author aiuiot
  *
  */
@@ -33,8 +33,9 @@ public class AuthInterceptor implements HandlerInterceptor{
 
 		//获取全部的Parameter
 		Map<String, String[]> map = request.getParameterMap();
-		map.forEach((k,v)->{
+		map.forEach((k, v)->{
 			if(k.equals("errorMsg")||k.equals("successMsg")||k.equals("target")) {
+				//将参数设置到Attribute
 				request.setAttribute(k, Joiner.on(",").join(v));
 			}
 		});
@@ -45,7 +46,7 @@ public class AuthInterceptor implements HandlerInterceptor{
 			return true; //不需要拦截
 		}
 		
-		//获取session 自动创建
+		//获取session 参数 true 如果没有session则自动创建
 		HttpSession session = request.getSession(true);
 
 		//通过session对象获取用户对象
@@ -53,6 +54,7 @@ public class AuthInterceptor implements HandlerInterceptor{
 
 		// 判断用户对象是否为空
 		if(user != null) {
+			//不为空，将user写入ThreadLocal
 			UserContext.setUser(user);
 		}
 		return true;

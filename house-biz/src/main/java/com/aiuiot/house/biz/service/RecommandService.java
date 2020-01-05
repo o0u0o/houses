@@ -21,23 +21,29 @@ import java.util.stream.Collectors;
 public class RecommandService {
     private static final String HOT_HOUSE_KEY = "hot_house";
 
+    // redis地址 本地-127.0.0.1 远端-106.13.234.67（百度云）
+    private static final String REDIS_HOST = "106.13.234.67";
+
     @Autowired
     private HouseService houseService;
 
+    //新增热度
     public void increase(Long id){
-        Jedis jedis = new Jedis("127.0.0.1");
+        Jedis jedis = new Jedis(REDIS_HOST);
         jedis.zincrby(HOT_HOUSE_KEY, 1.0, id+""); //1.0 为增加分数 zincrby热度
         jedis.zremrangeByRank(HOT_HOUSE_KEY, 10, -1);//排序之后删除10个以外的元素列表
         jedis.close();
     }
 
+    //获取热度
     public List<Long> getHot(){
-        Jedis jedis = new Jedis("127.0.0.1");
+        Jedis jedis = new Jedis(REDIS_HOST);
         Set<String> idSet = jedis.zrevrange(HOT_HOUSE_KEY, 0, -1);
         List<Long> ids = idSet.stream().map(Long::parseLong).collect(Collectors.toList());
         return ids;
     }
 
+    //获取热门房源
     public List<House> getHotHouse(Integer size){
         House query = new House();
         List<Long> list = getHot();

@@ -132,7 +132,7 @@
 
 <#macro search>
 <aside id="edit-search">
-    <header><h3>Search Properties</h3></header>
+    <header><h3>快速搜索</h3></header>
     <form role="form" id="_searchForm" class="form-search" method="post" action="/house/list">
 
         <div class="form-group">
@@ -167,11 +167,13 @@
                     <#if (loginUser.name)??>
                         <a href="/accounts/profile" class="promoted">Hello,${(loginUser.name)!}</a>
                           <#if (loginUser.email)?? && (loginUser.email) == "spring_boot@163.com">
-                          <a href="/agency/create" class="promoted">创建经纪机构</a>
+                            <a href="/agency/create" class="promoted">创建经纪机构</a>
                           </#if>
                         <a href="/accounts/logout" class="promoted">退出</a>
                     <#else>
-                        <a href="/accounts/register" class="promoted"><strong>注册</strong></a>
+                        <a href="/accounts/register" class="promoted">
+                            <strong>注册</strong>
+                        </a>
                         <a href="/accounts/signin">登录</a>
                     </#if>
                     </div>

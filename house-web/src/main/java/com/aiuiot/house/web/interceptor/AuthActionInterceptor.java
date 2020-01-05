@@ -40,6 +40,7 @@ public class AuthActionInterceptor implements HandlerInterceptor{
 		 * 2、判断 User 对象是否为空，如果为空 重定向到登录页面
 		 */
 		User user = UserContext.getUser();
+		//*********** 业务处理start ***********
 		//判断用户对象是否为空
 		if(user == null) {
 			String msg = URLEncoder.encode("请先登录", "utf-8");	//将现有的URL 记录下来，返回提示信息
@@ -52,6 +53,7 @@ public class AuthActionInterceptor implements HandlerInterceptor{
 			}
 			
 		}
+		//*********** 业务处理end ***********
 		return true;
 	}
 

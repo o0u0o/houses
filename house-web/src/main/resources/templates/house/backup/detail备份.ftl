@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="form-group">
                                     <select name="type">
-                                        <option value="1" >类型</option>
+                                        <option value="1">类型</option>
                                         <option value="1" <#if (vo.type)?? && (vo.type)==1> selected </#if> >售卖</option>
                                         <option value="2" <#if (vo.type)?? && (vo.type)==2> selected </#if> >出租</option>
                                     </select>

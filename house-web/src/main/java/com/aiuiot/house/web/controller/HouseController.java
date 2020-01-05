@@ -97,19 +97,23 @@ public class HouseController {
 	 */
 	@RequestMapping("house/detail")
 	public String houseDetail(Long id, ModelMap modelMap) {
-		House house = houseService.queryOneHouse(id);	//查询房屋信息
+		//查询房屋信息
+		House house = houseService.queryOneHouse(id);
 		HouseUser houseUser = houseService.getHouseUser(id);
-		recommandService.increase(id);	//点击详情页热度加1
-		List<Comment> comments = commentService.getHouseComments(id,8);
+
+		//点击详情页热度加1
+		recommandService.increase(id);
+		//List<Comment> comments = commentService.getHouseComments(id,8);
+
 		//查询经纪人
-		if(houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
-			modelMap.put("agent", agencyService.getAgentDeail(house.getUserId()));
-		}
+//		if(houseUser.getUserId() != null && !houseUser.getUserId().equals(0)) {
+//			modelMap.put("agent", agencyService.getAgentDeail(house.getUserId()));
+//		}
 
 		List<House> reHouses = recommandService.getHotHouse(CommonConstants.RECOM_SIZE);
 		modelMap.put("recomHouses", reHouses);
 		modelMap.put("house", house);
-		modelMap.put("commentList", comments);
+		//modelMap.put("commentList", comments);
 		return "/house/detail";
 	}
 	

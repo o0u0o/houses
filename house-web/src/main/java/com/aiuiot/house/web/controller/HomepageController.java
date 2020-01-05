@@ -28,17 +28,27 @@ public class HomepageController {
 	  
 	  @Autowired
 	  private UserService userService;
-	  
-	  @RequestMapping("index")
+
+	/**
+	 * 账号注册
+	 * @param modelMap
+	 * @return
+	 */
+	@RequestMapping("index")
 	  public String accountsRegister(ModelMap modelMap){
 	  	//查询新上房源
 	    List<House> houses =  recommendService.getLastest();
 	    modelMap.put("recomHouses", houses);
 	    return "/homepage/index";
 	  }
-	  
 
-	  @RequestMapping("")
+
+	/**
+	 * 首页跳转
+	 * @param modelMap
+	 * @return
+	 */
+	@RequestMapping("")
 	  public String index(ModelMap modelMap){
 	    return "redirect:/index";
 	  }

@@ -117,7 +117,6 @@
                         </aside><!-- /#edit-search -->
                         <aside id="featured-properties">
                             <header><h3>热门房产</h3></header>
-                            <!--
                             <#list recomHouses as house>
                             <div class="property small">
                                 <a href="/house/detail?id=${house.id}">
@@ -132,7 +131,7 @@
                                 </div>
                             </div><!-- /.property -->
                             </#list>
-                            -->
+
                             
                         </aside><!-- /#featured-properties -->
                         
