@@ -1,6 +1,14 @@
 # 房产销售平台（单体应用）
 
 ## redis
-线上：106.13.234.67（百度云）
 
-## 
+
+## Spring Boot Actuator
+- /info
+- /health
+- /beans
+- /autoconfig
+- /evn  系统信息
+- /mappings
+- /metrics
+- ...

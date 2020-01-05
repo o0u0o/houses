@@ -1561,3 +1561,75 @@ Error starting ApplicationContext. To display the auto-configuration report re-r
 2020-01-05 21:17:24.920 [main] INFO  [o.s.b.c.e.jetty.JettyEmbeddedServletContainer:157] - Jetty started on port(s) 8082 (http/1.1)
 2020-01-05 21:17:24.924 [main] INFO  [com.aiuiot.house.HousesApplication:57] - Started HousesApplication in 15.243 seconds (JVM running for 17.536)
 2020-01-05 21:17:28.577 [qtp1838562672-69] INFO  [o.s.b.a.e.mvc.MvcEndpointSecurityInterceptor:122] - Full authentication is required to access actuator endpoints. Consider adding Spring Security or set 'management.security.enabled' to false.
+2020-01-05 21:34:50.369 [Thread-50] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:985] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93084c: startup date [Sun Jan 05 21:17:10 CST 2020]; root of context hierarchy
+2020-01-05 21:34:50.524 [Thread-50] INFO  [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:985] - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66e21568: startup date [Sun Jan 05 21:17:24 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c93084c
+2020-01-05 21:34:50.889 [Thread-50] INFO  [org.eclipse.jetty.server.AbstractConnector:341] - Stopped ServerConnector@2e590b{HTTP/1.1,[http/1.1]}{0.0.0.0:8092}
+2020-01-05 21:34:50.891 [Thread-50] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2020-01-05 21:34:50.913 [Thread-50] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-01-05 21:34:50.939 [Thread-50] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@617449dd{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.6912789335498444879.8092/],UNAVAILABLE}
+2020-01-05 21:34:51.103 [Thread-50] INFO  [o.s.context.support.DefaultLifecycleProcessor:360] - Stopping beans in phase 0
+2020-01-05 21:34:51.132 [Thread-50] INFO  [o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter:449] - Unregistering JMX-exposed beans on shutdown
+2020-01-05 21:34:51.135 [Thread-50] INFO  [o.s.b.actuate.endpoint.jmx.EndpointMBeanExporter:243] - Unregistering JMX-exposed beans
+2020-01-05 21:34:51.137 [Thread-50] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:449] - Unregistering JMX-exposed beans on shutdown
+2020-01-05 21:34:51.137 [Thread-50] INFO  [o.s.jmx.export.annotation.AnnotationMBeanExporter:243] - Unregistering JMX-exposed beans
+2020-01-05 21:34:51.247 [Thread-50] INFO  [com.alibaba.druid.pool.DruidDataSource:1608] - {dataSource-1} closed
+2020-01-05 21:34:51.290 [Thread-50] INFO  [org.eclipse.jetty.server.AbstractConnector:341] - Stopped ServerConnector@55f8669d{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2020-01-05 21:34:51.292 [Thread-50] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2020-01-05 21:34:51.326 [Thread-50] INFO  [o.e.j.server.handler.ContextHandler.application:2345] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-01-05 21:34:51.328 [Thread-50] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1045] - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@769a58e5{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.8342815730985396484.8082/],UNAVAILABLE}
+2020-01-05 21:50:24.017 [main] INFO  [com.aiuiot.house.HousesApplication:50] - Starting HousesApplication on aiuiot.local with PID 95052 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses)
+2020-01-05 21:50:24.041 [main] INFO  [com.aiuiot.house.HousesApplication:647] - No active profile set, falling back to default profiles: default
+2020-01-05 21:50:26.051 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-05 21:50:26.072 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-05 21:50:26.121 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate:182] - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-01-05 21:50:26.826 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afa5529a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-05 21:50:27.106 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @6501ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-01-05 21:50:27.246 [main] INFO  [o.s.b.w.e.jetty.JettyServletWebServerFactory:143] - Server initialized with port: 8082
+2020-01-05 21:50:27.250 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2020-01-05 21:50:27.305 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2351] - Initializing Spring embedded WebApplicationContext
+2020-01-05 21:50:27.305 [main] INFO  [org.springframework.web.context.ContextLoader:284] - Root WebApplicationContext: initialization completed in 3160 ms
+2020-01-05 21:50:28.077 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1010] - {dataSource-1} inited
+2020-01-05 21:50:29.062 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2020-01-05 21:50:29.063 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2020-01-05 21:50:29.065 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 660000ms
+2020-01-05 21:50:29.079 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:857] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@47d023b7{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.431092838815001271.8082/],AVAILABLE}
+2020-01-05 21:50:29.080 [main] INFO  [org.eclipse.jetty.server.Server:410] - Started @8474ms
+2020-01-05 21:50:30.369 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-05 21:50:31.228 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-05 21:50:31.351 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2351] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-05 21:50:31.351 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:524] - Initializing Servlet 'dispatcherServlet'
+2020-01-05 21:50:31.366 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:546] - Completed initialization in 14 ms
+2020-01-05 21:50:31.424 [main] INFO  [org.eclipse.jetty.server.AbstractConnector:292] - Started ServerConnector@6df3e44c{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2020-01-05 21:50:31.443 [main] INFO  [o.s.boot.web.embedded.jetty.JettyWebServer:156] - Jetty started on port(s) 8082 (http/1.1) with context path '/'
+2020-01-05 21:50:31.449 [main] INFO  [com.aiuiot.house.HousesApplication:59] - Started HousesApplication in 8.294 seconds (JVM running for 10.843)
+2020-01-05 21:50:50.127 [parallel-1] INFO  [io.lettuce.core.EpollProvider:68] - Starting without optional epoll library
+2020-01-05 21:50:50.132 [parallel-1] INFO  [io.lettuce.core.KqueueProvider:70] - Starting without optional kqueue library
+2020-01-05 21:53:02.610 [Thread-28] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-05 21:53:03.929 [Thread-28] INFO  [com.alibaba.druid.pool.DruidDataSource:2003] - {dataSource-1} closing ...
+2020-01-05 21:53:03.963 [Thread-28] INFO  [com.alibaba.druid.pool.DruidDataSource:2075] - {dataSource-1} closed
+2020-01-05 21:53:03.990 [Thread-28] INFO  [org.eclipse.jetty.server.AbstractConnector:341] - Stopped ServerConnector@6df3e44c{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2020-01-05 21:53:03.992 [Thread-28] INFO  [org.eclipse.jetty.server.session:167] - node0 Stopped scavenging
+2020-01-05 21:53:04.004 [Thread-28] INFO  [o.e.j.server.handler.ContextHandler.application:2351] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-01-05 21:53:04.009 [Thread-28] INFO  [org.eclipse.jetty.server.handler.ContextHandler:1047] - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@47d023b7{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.431092838815001271.8082/],UNAVAILABLE}
+2020-01-05 21:53:29.300 [main] INFO  [com.aiuiot.house.HousesApplication:50] - Starting HousesApplication on aiuiot.local with PID 95209 (/Volumes/SD/Workspaces/workspace-sts/houses/house-web/target/classes started by aiuiot in /Volumes/SD/Workspaces/workspace-sts/houses)
+2020-01-05 21:53:29.319 [main] INFO  [com.aiuiot.house.HousesApplication:647] - No active profile set, falling back to default profiles: default
+2020-01-05 21:53:41.671 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2a1bfeb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-05 21:53:44.760 [main] INFO  [org.eclipse.jetty.util.log:193] - Logging initialized @19511ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-01-05 21:53:45.835 [main] INFO  [o.s.b.w.e.jetty.JettyServletWebServerFactory:143] - Server initialized with port: 8082
+2020-01-05 21:53:45.848 [main] INFO  [org.eclipse.jetty.server.Server:370] - jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2020-01-05 21:53:46.183 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2351] - Initializing Spring embedded WebApplicationContext
+2020-01-05 21:53:46.184 [main] INFO  [org.springframework.web.context.ContextLoader:284] - Root WebApplicationContext: initialization completed in 16593 ms
+2020-01-05 21:53:47.976 [main] INFO  [com.alibaba.druid.pool.DruidDataSource:1010] - {dataSource-1} inited
+2020-01-05 21:53:48.720 [main] INFO  [org.eclipse.jetty.server.session:365] - DefaultSessionIdManager workerName=node0
+2020-01-05 21:53:48.721 [main] INFO  [org.eclipse.jetty.server.session:370] - No SessionScavenger set, using defaults
+2020-01-05 21:53:48.724 [main] INFO  [org.eclipse.jetty.server.session:149] - node0 Scavenging every 660000ms
+2020-01-05 21:53:48.949 [main] INFO  [org.eclipse.jetty.server.handler.ContextHandler:857] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@6428591a{application,/,[file:///private/var/folders/nc/3lrj9th92598rz3264sls_h00000gn/T/jetty-docbase.5793190080111572566.8082/],AVAILABLE}
+2020-01-05 21:53:48.952 [main] INFO  [org.eclipse.jetty.server.Server:410] - Started @23712ms
+2020-01-05 21:53:50.986 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-05 21:53:53.449 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver:58] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-05 21:53:53.652 [main] INFO  [o.e.j.server.handler.ContextHandler.application:2351] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-05 21:53:53.653 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:524] - Initializing Servlet 'dispatcherServlet'
+2020-01-05 21:53:53.676 [main] INFO  [org.springframework.web.servlet.DispatcherServlet:546] - Completed initialization in 23 ms
+2020-01-05 21:53:53.781 [main] INFO  [org.eclipse.jetty.server.AbstractConnector:292] - Started ServerConnector@7bde1f3a{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+2020-01-05 21:53:53.793 [main] INFO  [o.s.boot.web.embedded.jetty.JettyWebServer:156] - Jetty started on port(s) 8082 (http/1.1) with context path '/'
+2020-01-05 21:53:53.802 [main] INFO  [com.aiuiot.house.HousesApplication:59] - Started HousesApplication in 25.756 seconds (JVM running for 28.562)
