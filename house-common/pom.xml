@@ -27,6 +27,13 @@
 			</exclusions>
 		</dependency>
 
+		<!-- Servlet API：编译期需要（HttpServlet 等），运行期由具体容器（Jetty）提供 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- 工具库 -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
