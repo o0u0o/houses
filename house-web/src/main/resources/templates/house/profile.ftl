@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en-US">
+<html lang="zh-CN">
 <@common.header/>
 
 <body class="page-sub-page page-my-properties page-account" id="page-top">

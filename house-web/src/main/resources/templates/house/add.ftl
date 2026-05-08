@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en-US">
+<html lang="zh-CN">
 <@common.header/>
 
 <body class="page-sub-page page-submit" id="page-top">
