@@ -4,8 +4,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Map;
 
-import org.eclipse.jetty.util.UrlEncoded;
-
 import com.google.common.base.Joiner;
 import com.google.common.collect.Maps;
 
@@ -38,7 +36,7 @@ public class ResultMsg {
 	//判断是否成功
 	public boolean isSuccess() {
 		return errorMsg == null;	//当errorMsg为null就是成功
-	};	
+	}
 
 	public String getErrorMsg() {
 		return errorMsg;
@@ -105,8 +103,6 @@ public class ResultMsg {
 		Map<String, String> map = asMap();
 		Map<String, String> newMap = Maps.newHashMap();
 		//遍历Map
-		//map.forEach((k,v)->{if(v!=null) newMap.put(k, UrlEncoded.encodeString(v,"utf-8"))});
-		//map.forEach((k,v)->{if(v!=null) newMap.put(k, UrlEncoded.encodeString(v, "utf-8"))});
 		
 		map.forEach((k,v) -> {if(v!=null)
 			try {
