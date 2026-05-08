@@ -81,6 +81,14 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Servlet API：编译期所有模块可见（HttpServlet / ServletRegistrationBean 等），
+		     运行期由具体 Servlet 容器（house-web 引入的 Jetty）提供，避免重复打包 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<modules>
