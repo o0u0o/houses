@@ -14,7 +14,8 @@
 	<name>house-common</name>
 
 	<dependencies>
-		<!-- Spring Boot Web (排除 Tomcat) + Jetty 容器 -->
+		<!-- Spring MVC 相关 API（仅依赖类型，不绑定具体 Servlet 容器；
+		     真正的容器由 house-web 模块决定） -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -24,10 +25,6 @@
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jetty</artifactId>
 		</dependency>
 
 		<!-- 工具库 -->
