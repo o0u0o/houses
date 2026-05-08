@@ -21,6 +21,12 @@
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
+		<!-- Servlet 容器：Jetty（替换默认 Tomcat） -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+		</dependency>
+
 		<!-- 视图层：FreeMarker -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
