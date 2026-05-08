@@ -25,7 +25,7 @@
 
 		<!-- 第三方依赖版本集中管理 -->
 		<commons-lang3.version>3.12.0</commons-lang3.version>
-		<commons-beanutils.version>1.9.4</commons-beanutils.version>
+		<commons-beanutils.version>1.11.0</commons-beanutils.version>
 		<guava.version>32.0.0-jre</guava.version>
 		<druid.version>1.1.21</druid.version>
 		<jedis.version>3.7.1</jedis.version>
