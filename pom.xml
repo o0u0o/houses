@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.7.RELEASE</version>
+<!--		<version>3.0.11</version>-->
+		<version>4.1.1</version>
 		<relativePath/>
 	</parent>
 
@@ -16,10 +17,16 @@
 	<name>houses</name>
 	<description>房产销售平台</description>
 
+	<modules>
+		<module>house-common</module>
+		<module>house-biz</module>
+		<module>house-web</module>
+	</modules>
+
 	<properties>
-		<java.version>1.8</java.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>21</java.version>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -27,10 +34,10 @@
 		<commons-lang3.version>3.12.0</commons-lang3.version>
 		<commons-beanutils.version>1.11.0</commons-beanutils.version>
 		<guava.version>32.0.0-jre</guava.version>
-		<druid.version>1.1.21</druid.version>
+		<druid-spring-boot.version>1.2.28</druid-spring-boot.version>
 		<jedis.version>3.7.1</jedis.version>
 		<jsoup.version>1.23.1</jsoup.version>
-		<mybatis-spring-boot.version>2.1.4</mybatis-spring-boot.version>
+		<mybatis-spring-boot.version>4.1.0</mybatis-spring-boot.version>
 	</properties>
 
 	<!-- 统一管理子模块版本 -->
@@ -53,8 +60,8 @@
 			</dependency>
 			<dependency>
 				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
-				<version>${druid.version}</version>
+				<artifactId>druid-spring-boot-4-starter</artifactId>
+				<version>${druid-spring-boot.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>redis.clients</groupId>
@@ -84,16 +91,12 @@
 
 		<!-- Servlet API：编译期所有模块可见（HttpServlet / ServletRegistrationBean 等），
 		     运行期由具体 Servlet 容器（house-web 引入的 Jetty）提供，避免重复打包 -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>javax.servlet</groupId>-->
+<!--			<artifactId>javax.servlet-api</artifactId>-->
+<!--			<version>4.0.1</version>-->
+<!--			<scope>provided</scope>-->
+<!--		</dependency>-->
 	</dependencies>
 
-	<modules>
-		<module>house-common</module>
-		<module>house-biz</module>
-		<module>house-web</module>
-	</modules>
 </project>
