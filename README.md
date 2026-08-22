@@ -1,9 +1,9 @@
 # Houses · 房产销售平台
 
-> 基于 Spring Boot 2.x 的多模块单体房产销售/中介管理平台，涵盖房源发布、用户经纪人管理、评论、邮件通知、文件上传等典型业务场景。
+> 基于 Spring Boot 4.1.1 的多模块单体房产销售/中介管理平台，涵盖房源发布、用户经纪人管理、评论、邮件通知、文件上传等典型业务场景。
 
-[![Java](https://img.shields.io/badge/Java-1.8+-blue.svg)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.1.7-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-21+-blue.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.1-brightgreen.svg)](https://spring.io/projects/spring-boot)
 [![Maven](https://img.shields.io/badge/Maven-3.x-red.svg)](https://maven.apache.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
@@ -50,18 +50,18 @@
 
 ## 技术栈
 
-| 类别 | 技术 / 组件 |
-| --- | --- |
-| 核心框架 | Spring Boot 2.1.7、Spring Web MVC |
-| 持久层 | MyBatis 1.3.2 (Spring Boot Starter)、MySQL |
-| 数据源 | Alibaba Druid 1.1.21 |
-| 缓存 | Redis（Jedis 2.9.0） |
-| 视图层 | FreeMarker |
-| Web 容器 | Jetty（替换默认 Tomcat） |
+| 类别 | 技术 / 组件                                                               |
+| --- |---------------------------------------------------------------------------|
+| 核心框架 | Spring Boot 4.1.1、Spring Web MVC                                         |
+| 持久层 | MyBatis 4.1.0 (Spring Boot Starter)、MySQL                                     |
+| 数据源 | Alibaba Druid 1.2.28                                                      |
+| 缓存 | Redis（Jedis 2.9.0）                                                      |
+| 视图层 | FreeMarker                                                                |
+| Web 容器 | Jetty（替换默认 Tomcat）                                                  |
 | 工具库 | Guava、Apache Commons Lang3、commons-beanutils、Lombok、Jsoup、HttpClient |
-| 监控 | Spring Boot Actuator |
-| 构建 | Maven 3.x、JDK 1.8 |
-| 邮件 | Spring Mail（SMTP） |
+| 监控 | Spring Boot Actuator                                                      |
+| 构建 | Maven 3.x、JDK 21                                                         |
+| 邮件 | Spring Mail（SMTP）                                                       |
 
 ## 项目结构
 

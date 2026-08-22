@@ -11,5 +11,5 @@ import org.springframework.context.annotation.Import;
 @Retention(RetentionPolicy.RUNTIME)
 @Import(HttpClientAutoConfiguration.class)
 public @interface EnableHttpClient {
-	
+
 }

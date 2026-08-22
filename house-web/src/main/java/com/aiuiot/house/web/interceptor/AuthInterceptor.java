@@ -2,9 +2,9 @@ package com.aiuiot.house.web.interceptor;
 
 import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -22,7 +22,7 @@ import com.google.common.base.Joiner;
  */
 //定义为SpringBean 
 @Component
-public class AuthInterceptor implements HandlerInterceptor{
+public class AuthInterceptor implements HandlerInterceptor {
 
 	/**
 	 * 在Controller执行之前进行拦截
